@@ -5,3 +5,7 @@ dist
 node_modules
 .nuxt
 .docker-compose/mysql/data
+bbs-go.code-workspace
+pkg
+bin
+.github

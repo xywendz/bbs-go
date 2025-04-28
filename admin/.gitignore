@@ -3,6 +3,8 @@ node_modules
 dist
 dist-ssr
 *.local
+.vscode
+.husky
 
 # auto-imports.d.ts
 # auto-components.d.ts

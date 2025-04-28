@@ -44,3 +44,7 @@ go.work.sum
 ip2region.xdb
 
 __debug_bin*
+bin
+pkg
+bbs-go.local.yaml
+.vscode
