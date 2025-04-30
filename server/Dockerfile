@@ -8,6 +8,8 @@ COPY ./server ./
 RUN go mod download
 RUN CGO_ENABLED=0 go build -v -o bbs-go main.go && chmod +x bbs-go
 
+FROM alpine:3.21
+WORKDIR /app/bbs-go
 COPY --from=server_builder /code/bbs-go/server/bbs-go ./server/bbs-go
 COPY --from=server_builder /code/bbs-go/server/*.yaml ./server/
 COPY --from=server_builder /code/bbs-go/server/*.yml ./server/

@@ -69,7 +69,7 @@ Es:
 
 # 微信配置
 WeixinConfig:
-  AppID:
+  AppID: wx5bd8f7293798d94f
   AppSecret:
 
 # search
