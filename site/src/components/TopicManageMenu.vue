@@ -40,7 +40,7 @@ const menus = computed(() => {
   const isTopicOwner =
     userStore.user && userStore.user.id === topic.value.user.id;
   const items = [];
-  if (isTopicOwner && topic.value.type === 0||isAdmin) {
+  if ((isTopicOwner && topic.value.type === 0)||isAdmin) {
     items.push({
       command: "edit",
       label: "修改",
